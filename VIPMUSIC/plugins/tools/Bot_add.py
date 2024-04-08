@@ -11,11 +11,12 @@ from VIPMUSIC.utils.database import get_assistant
 
 
 photo = [
-    "https://telegra.ph/file/1949480f01355b4e87d26.jpg",
-    "https://telegra.ph/file/3ef2cc0ad2bc548bafb30.jpg",
-    "https://telegra.ph/file/a7d663cd2de689b811729.jpg",
-    "https://telegra.ph/file/6f19dc23847f5b005e922.jpg",
-    "https://telegra.ph/file/2973150dd62fd27a3a6ba.jpg",
+     "https://telegra.ph/file/3ca0e53b5604943c1dcc9.jpg",
+    "https://telegra.ph/file/24d9f14314ce58c6efa74.jpg",
+    "https://telegra.ph/file/73844e707166f442ff3ef.jpg",
+    "https://telegra.ph/file/71e1b11d1c8f881500a52.jpg",
+    "https://telegra.ph/file/3fec5a206cc3f26031810.jpg",
+    
 ]
 
 @app.on_message(filters.new_chat_members, group=2)
