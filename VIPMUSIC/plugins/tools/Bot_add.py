@@ -11,11 +11,11 @@ from VIPMUSIC.utils.database import get_assistant
 
 
 photo = [
-     "https://telegra.ph/file/3ca0e53b5604943c1dcc9.jpg",
-    "https://telegra.ph/file/24d9f14314ce58c6efa74.jpg",
-    "https://telegra.ph/file/73844e707166f442ff3ef.jpg",
-    "https://telegra.ph/file/71e1b11d1c8f881500a52.jpg",
-    "https://telegra.ph/file/3fec5a206cc3f26031810.jpg",
+     "https://telegra.ph/file/e444b74940e480dd62a11.jpg",
+    "https://telegra.ph/file/06e5de22a8a02d0be0010.jpg",
+    "https://telegra.ph/file/843359e2b1553b792df2d.jpg",
+    "https://telegra.ph/file/d62b1af207276d22f1211.jpg",
+    "https://telegra.ph/file/1e0e6a85cea882a6980ce.jpg",
     
 ]
 
@@ -29,15 +29,15 @@ async def join_watcher(_, message):
                 count = await app.get_chat_members_count(chat.id)
                 username = message.chat.username if message.chat.username else "𝐏ʀɪᴠᴀᴛᴇ 𝐆ʀᴏᴜᴘ"
                 msg = (
-                    f"**📝𝐌ᴜsɪᴄ 𝐁ᴏᴛ 𝐀ᴅᴅᴇᴅ 𝐈ɴ 𝐀 #𝐍ᴇᴡ_𝐆ʀᴏᴜᴘ**\n\n"
-                    f"**📌𝐂ʜᴀᴛ 𝐍ᴀᴍᴇ:** {message.chat.title}\n"
-                    f"**🍂𝐂ʜᴀᴛ 𝐈ᴅ:** {message.chat.id}\n"
-                    f"**🔐𝐂ʜᴀᴛ 𝐔sᴇʀɴᴀᴍᴇ:** @{username}\n"
-                    f"**📈𝐆ʀᴏᴜᴘ 𝐌ᴇᴍʙᴇʀs:** {count}\n"
-                    f"**🤔𝐀ᴅᴅᴇᴅ 𝐁ʏ:** {message.from_user.mention}"
+                    f"**📝ᴍᴜꜱɪᴄ ʙᴏᴛ ᴀᴅᴅᴇᴅ ɪɴ ᴀ #𝐍ᴇᴡ_𝐆ʀᴏᴜᴘ**\n\n"
+                    f"**📌ᴄʜᴀᴛ ɴᴀᴍᴇ:** {message.chat.title}\n"
+                    f"**🍂ᴄʜᴀᴛ ɪᴅ:** {message.chat.id}\n"
+                    f"**🔐ᴄʜᴀᴛ ᴜꜱᴇʀɴᴀᴍᴇ:** @{username}\n"
+                    f"**📈ɢʀᴏᴜᴘ ᴍᴇᴍʙᴇʀꜱ:** {count}\n"
+                    f"**🤔ᴀᴅᴅᴇᴅ ʙʏ:** {message.from_user.mention}"
                 )
                 await app.send_photo(LOG_GROUP_ID, photo=random.choice(photo), caption=msg, reply_markup=InlineKeyboardMarkup([
-                [InlineKeyboardButton(f"😍𝐀ᴅᴅᴇᴅ 𝐁ʏ😍", url=f"tg://openmessage?user_id={message.from_user.id}")]
+                [InlineKeyboardButton(f"😍ᴀᴅᴅᴇᴅ ʙʏ😍", url=f"tg://openmessage?user_id={message.from_user.id}")]
              ]))
                 await userbot.join_chat(f"{username}")
     except Exception as e:
