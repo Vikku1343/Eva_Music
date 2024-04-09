@@ -39,11 +39,11 @@ SPAM_THRESHOLD = 2
 SPAM_WINDOW_SECONDS = 5
 
 random_photo = [
-    "https://telegra.ph/file/1949480f01355b4e87d26.jpg",
-    "https://telegra.ph/file/3ef2cc0ad2bc548bafb30.jpg",
-    "https://telegra.ph/file/a7d663cd2de689b811729.jpg",
-    "https://telegra.ph/file/6f19dc23847f5b005e922.jpg",
-    "https://telegra.ph/file/2973150dd62fd27a3a6ba.jpg",
+     "https://telegra.ph/file/e444b74940e480dd62a11.jpg",
+    "https://telegra.ph/file/06e5de22a8a02d0be0010.jpg",
+    "https://telegra.ph/file/843359e2b1553b792df2d.jpg",
+    "https://telegra.ph/file/d62b1af207276d22f1211.jpg",
+    "https://telegra.ph/file/1e0e6a85cea882a6980ce.jpg",
 ]
 # --------------------------------------------------------------------------------- #
 
